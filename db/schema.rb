@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 2021_12_31_113150) do
-=======
-ActiveRecord::Schema.define(version: 2021_12_29_135507) do
->>>>>>> Stashed changes
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,10 +23,7 @@ ActiveRecord::Schema.define(version: 2021_12_29_135507) do
     t.string "name", null: false
     t.integer "gender", default: 0, null: false
     t.text "self_introduction"
-<<<<<<< Updated upstream
     t.string "profile_image"
-=======
->>>>>>> Stashed changes
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
